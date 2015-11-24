@@ -24,5 +24,5 @@ for chunk in chunks:
         _id = probe["id"]
         _ip = probe["metadata"][0][1]
         lpi = probe["metadata"][1][1]
-        print("%s %s %s" % (_id, _ip, lpi))
+        print("%s %s %s" % (_id, _ip, lpi), file=f)
 f.close()
